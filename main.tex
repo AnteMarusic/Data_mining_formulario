@@ -285,5 +285,26 @@ Adjusting the probability to account for attribute values that don't occur with 
 %     0 \leq \alpha_i \leq C, \quad i = 1, 2, ..., r
 % \]
 
+\section{K-means}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Images/kmeans.png}
+\end{figure}
+
+\section{Agglomerative clustering}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Images/Agglomerative_clustering.png}
+\end{figure}
+
+Distance metrics:
+\begin{itemize}
+    \item Single link: distance between two clusters is the distance between two closest data points in the two clusters.
+    \item Complete link: distance between two clusters is the distance of two furthest data points in the two clusters.
+    \item Average link: average distance between all points in the two clusters. (most precise metrics but also most computationally expensive)
+    \item Centroid link: distance between the centroids of the two clusters. (doesn't consider the shape of the cluster)
+\end{itemize}
+
+
 % \end{multicols}
 \end{document}
